@@ -1,0 +1,38 @@
+{
+  "id": "give-me-money",
+  "name": "Give me money",
+  "version": "0.1.0",
+  "description": "One button. Press it and pay irfani 10 Möbius credits. That's it.",
+  "entry": "index.jsx",
+  "icon": "icon.png",
+  "offline_capable": false,
+  "permissions": {
+    "spend_credits": [
+      "irfani/give-me-money"
+    ]
+  },
+  "service": {
+    "entry": "service.py",
+    "access": "self"
+  },
+  "source_files": [
+    "service.py"
+  ],
+  "runtime": {
+    "imports": [
+      "react"
+    ]
+  },
+  "store": {
+    "tagline": "One button. Press it and send the creator 10 credits.",
+    "description": "Give me money is exactly what it says: a single big green button. Press it, confirm the payment in Möbius, and 10 of your Möbius credits go to the creator.\n\nYou always see the price first, and nothing is paid until you press Pay in Möbius's own confirmation. Cancel and nothing moves. The app stores no data and sees nothing but its own payment.",
+    "screenshots": [
+      {
+        "src": "static/store/main.png",
+        "alt": "A large round green button labeled Give me money, with Costs 10 credits written underneath on a dark background.",
+        "label": "The whole app"
+      }
+    ]
+  },
+  "license": "MIT"
+}
